@@ -1017,7 +1017,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusIsStaticBar1Supported__ = &kbusIsStaticBar1Supported_395e98;
+        pThis->__kbusIsStaticBar1Supported__ = &kbusIsStaticBar1Supported_TU102;
     }
 
     // kbusEnableStaticBar1Mapping -- halified (2 hals) body
@@ -1029,7 +1029,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusEnableStaticBar1Mapping__ = &kbusEnableStaticBar1Mapping_395e98;
+        pThis->__kbusEnableStaticBar1Mapping__ = &kbusEnableStaticBar1Mapping_TU102;
     }
 
     // kbusDisableStaticBar1Mapping -- halified (2 hals) body
@@ -1041,7 +1041,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusDisableStaticBar1Mapping__ = &kbusDisableStaticBar1Mapping_d44104;
+        pThis->__kbusDisableStaticBar1Mapping__ = &kbusDisableStaticBar1Mapping_TU102;
     }
 
     // kbusGetBar1P2PDmaInfo -- halified (2 hals) body
@@ -1053,7 +1053,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusGetBar1P2PDmaInfo__ = &kbusGetBar1P2PDmaInfo_395e98;
+        pThis->__kbusGetBar1P2PDmaInfo__ = &kbusGetBar1P2PDmaInfo_GH100;
     }
 
     // kbusIncreaseStaticBar1Refcount -- halified (2 hals) body
@@ -1065,7 +1065,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusIncreaseStaticBar1Refcount__ = &kbusIncreaseStaticBar1Refcount_395e98;
+        pThis->__kbusIncreaseStaticBar1Refcount__ = &kbusIncreaseStaticBar1Refcount_TU102;
     }
 
     // kbusDecreaseStaticBar1Refcount -- halified (2 hals) body
@@ -1077,7 +1077,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusDecreaseStaticBar1Refcount__ = &kbusDecreaseStaticBar1Refcount_395e98;
+        pThis->__kbusDecreaseStaticBar1Refcount__ = &kbusDecreaseStaticBar1Refcount_TU102;
     }
 
     // kbusGetStaticFbAperture -- halified (2 hals) body
@@ -1089,7 +1089,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusGetStaticFbAperture__ = &kbusGetStaticFbAperture_395e98;
+        pThis->__kbusGetStaticFbAperture__ = &kbusGetStaticFbAperture_TU102;
     }
 
     // kbusCreateP2PMappingForBar1P2P -- halified (2 hals) body
@@ -1101,7 +1101,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusCreateP2PMappingForBar1P2P__ = &kbusCreateP2PMappingForBar1P2P_395e98;
+        pThis->__kbusCreateP2PMappingForBar1P2P__ = &kbusCreateP2PMappingForBar1P2P_GH100;
     }
 
     // kbusRemoveP2PMappingForBar1P2P -- halified (2 hals) body
@@ -1113,7 +1113,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusRemoveP2PMappingForBar1P2P__ = &kbusRemoveP2PMappingForBar1P2P_395e98;
+        pThis->__kbusRemoveP2PMappingForBar1P2P__ = &kbusRemoveP2PMappingForBar1P2P_GH100;
     }
 
     // kbusHasPcieBar1P2PMapping -- halified (2 hals) body
@@ -1125,7 +1125,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusHasPcieBar1P2PMapping__ = &kbusHasPcieBar1P2PMapping_d69453;
+        pThis->__kbusHasPcieBar1P2PMapping__ = &kbusHasPcieBar1P2PMapping_GH100;
     }
 
     // kbusIsPcieBar1P2PMappingSupported -- halified (2 hals) body
@@ -1137,7 +1137,7 @@ static void __nvoc_init_funcTable_KernelBus_1(KernelBus *pThis, GpuHalspecOwner 
     // default
     else
     {
-        pThis->__kbusIsPcieBar1P2PMappingSupported__ = &kbusIsPcieBar1P2PMappingSupported_d69453;
+        pThis->__kbusIsPcieBar1P2PMappingSupported__ = &kbusIsPcieBar1P2PMappingSupported_GH100;
     }
 
     // kbusCheckFlaSupportedAndInit -- halified (2 hals) body
@@ -2124,4 +2124,3 @@ NV_STATUS __nvoc_objCreateDynamic_KernelBus(KernelBus **ppThis, Dynamic *pParent
 
     return status;
 }
-
