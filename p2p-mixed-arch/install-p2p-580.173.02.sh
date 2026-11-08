@@ -9,8 +9,10 @@
 # Needs: python3, python3-pyelftools, patch, dkms, kernel headers. Reboot afterwards.
 #
 # This is a cleaned-up version of the commands used on the test machine (August and
-# November 2026). This exact script has not been run on that machine; see the
-# "Install" section of P2P_P100_RTX50.md for the step-by-step equivalent.
+# November 2026). The script itself has only been run in a sandbox, with the system paths
+# redirected into a temporary directory and dkms, update-initramfs, ldconfig, apt-mark
+# and modinfo stubbed; it has not been run on a real system. See the "Install" section
+# of P2P_P100_RTX50.md for the step-by-step equivalent.
 set -euo pipefail
 
 HERE=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)

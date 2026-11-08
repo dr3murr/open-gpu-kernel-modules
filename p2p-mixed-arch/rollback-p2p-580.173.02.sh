@@ -11,7 +11,7 @@
 # needs Rm4598628 to initialize at all. Delete /etc/modprobe.d/90-nvidia-coexist.conf
 # yourself only if the 5080 + P100 pair is no longer in the machine.
 # Like the install script, this is a cleaned-up version of the commands used on the test
-# machine and has not been run in this exact form.
+# machine. It has only been run in the same sandbox, not on a real system.
 set -euo pipefail
 
 HERE=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
