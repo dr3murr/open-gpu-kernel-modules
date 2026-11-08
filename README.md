@@ -1,3 +1,7 @@
+> **Branch `p100-rtx50-p2p-580.173.02` (not an NVIDIA release):** PCIe P2P between a GeForce RTX 5080 (Blackwell) and a Tesla P100 (Pascal) on the proprietary 580.173.02 driver, through patches to the closed RM and libcuda. See [P2P_P100_RTX50.md](P2P_P100_RTX50.md); the helper scripts are in `p2p-mixed-arch/`. NVIDIA's README follows unchanged.
+>
+> Written with AI coding agents and measured on one machine (RTX 5080 + Tesla P100, Ryzen 9 9950X3D, 64 GB DDR5); not reviewed by a kernel/GPU engineer. Use at your own risk.
+
 # NVIDIA Linux Open GPU Kernel Module Source
 
 This is the source release of the NVIDIA Linux open GPU kernel modules,
