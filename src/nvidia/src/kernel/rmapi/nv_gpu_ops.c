@@ -4009,8 +4009,10 @@ nvGpuOpsBuildExternalAllocPtes
         NvU32 ptePcfHw  = 0;
 
          nvFieldSetBool(&pPteFmt->fldValid, NV_TRUE, pte.v8);
+         // BAR1 peer memory is encoded as non-coherent sysmem in both PTE
+         // formats; a Blackwell PTE must not map a Pascal peer as SYS_COH.
          if (aperture == GMMU_APERTURE_PEER)
-             gmmuFieldSetAperture(&pPteFmt->fldAperture, GMMU_APERTURE_SYS_COH, pte.v8);
+             gmmuFieldSetAperture(&pPteFmt->fldAperture, GMMU_APERTURE_SYS_NONCOH, pte.v8);
          else
              gmmuFieldSetAperture(&pPteFmt->fldAperture, aperture, pte.v8);
          nvFieldSet32(&pPteFmt->fldKind, kind, pte.v8);
